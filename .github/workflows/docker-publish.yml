@@ -55,5 +55,5 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
-          tags: latest
+          tags: gpdocking/toolchain:latest
           labels: ${{ steps.meta.outputs.labels }}
