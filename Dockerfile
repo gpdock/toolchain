@@ -1,4 +1,4 @@
-FROM gcc:8
+FROM gcc:9
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
