@@ -7,13 +7,14 @@ name: Docker
 
 on:
   schedule:
-    - cron: '24 1 * * *'
+    - cron: '0 0 * * *'
   push:
     branches: [ main ]
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
 
 env:
   # github.repository as <account>/<repo>
